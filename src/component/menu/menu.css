@@ -1,0 +1,7 @@
+li:hover{
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    border-radius : 10px;
+    background-color: powderblue;
+    position: relative;
+}
