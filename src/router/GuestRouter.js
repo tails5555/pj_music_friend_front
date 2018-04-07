@@ -11,6 +11,7 @@ class GuestRouter extends Component{
                 <GuestMenu />
                 <div className="mainScreen">
                     <Route exact path="/" component={GuestMainPage} />
+                    <Route exact path="/music/{id}" component={GuestMainPage} />
                     <Route exact path="/login" component={LoginPage} />
                     <Route exact path="/sign" component={SignUpPage} />
                     <Route exact path="/user/logout" render={() => (<Redirect to="/" />)}/>

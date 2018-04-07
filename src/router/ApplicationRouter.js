@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import {BrowserRouter} from 'react-router-dom';
-import GuestRouter from './GuestRouter';
+import UserRouter from './UserRouter';
 class ApplicationRouter extends Component{
     render() {
         return (
             <BrowserRouter>
-                <GuestRouter />
+                <UserRouter />
             </BrowserRouter>
         )
     }

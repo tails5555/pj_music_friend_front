@@ -39,7 +39,7 @@ class MusicList extends Component{
         }; // 추후에 MusicList를 받아올 때에는 Redux를 통해서 StateToProps로 받아올 수 있기 때문에 우선은 여기서는 state를 이용하여 저장을 하겠다.
     }
 
-    handleChange(musicId){
+    handleChange(musicId){ // 추후에 로그인을 안 한 회원들에 대해서는 즐겨찾기 추가를 하지 않고 바로 로그인을 하는 페이지로 넘어갈 수 있도록 지시를 할 예정.
         let tmpMusic=this.state.tmpMusicList[musicId-1];
         tmpMusic.like=!tmpMusic.like;
         let newMusic=this.state.tmpMusicList.slice();
@@ -68,7 +68,6 @@ class MusicList extends Component{
     }
 
     ratingCount(count){
-
         if(count>0){
             return(
                 <p className="rating_up">{`▲${count}`}</p>
