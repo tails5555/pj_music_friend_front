@@ -16,7 +16,7 @@ const UserMenu = () => {
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/myLikeList">
-                            My Like Music
+                            My ♥
                         </Link>
                     </li>
                     <li className="nav-item">
