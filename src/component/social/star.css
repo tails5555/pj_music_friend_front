@@ -1,0 +1,33 @@
+.toggle-star {
+    position: absolute;
+    left: -100vw;
+}
+
+[for='toggle-heart'] {
+    color: #aab8c2;
+}
+
+.toggle-star:checked + label {
+    color: yellow;
+}
+
+.toggle-star-label{
+    font-size: 2em;
+    cursor: pointer;
+}
+
+@keyframes star { 0%, 17.5% { font-size: 0; } }
+
+.toggle-star:checked + label {
+    will-change: font-size;
+    animation: star 1s cubic-bezier(.17, .89, .32, 1.49);
+}
+
+.graphScreen {
+    min-height : 600px;
+    border : 2px dodgerblue solid;
+    border-radius : 5px;
+    margin-bottom : 10px;
+    margin-left : 20px;
+    margin-right : 20px;
+}
